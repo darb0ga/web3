@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>стартовая страница</title>
+    <link href="../style/main.css" rel="stylesheet" type="text/css"/>
+    <!-- Подключение скрипта для часов -->
+    <script defer="defer" type="text/javascript" src="../js/clock.js"></script>
+
+    <h:outputScript src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</h:head>
+<h:body>
+    <h1>Борисова Дарья Веб3 варик 836932</h1>
+    <!-- Кнопка начать -->
+    <h:form>
+        <h:commandButton value="Начать" action="#toMain" outcome="toMain" styleClass="btn"/>
+    </h:form>
+    <!-- Канва для часов -->
+    <canvas id="clock" width="300" height="300"></canvas>
+</h:body>
+
+</html>

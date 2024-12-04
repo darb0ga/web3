@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/photo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    font-family: fantasy;
+    font-size: xx-large;
+    color: #9a51ef;
+}
+
+table {
+    align-items: center;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Times New Roman, serif;
+    font-size: large;
+    font-weight: 550;
+}
+
+caption {
+    font-size: large;
+    text-align: left;
+}
+
+.x {
+    height: 20px;
+    margin: 7px;
+    width: 200px;
+}
+
+.y {
+    height: 30px;
+    margin: 7px;
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+    border: 2px solid #051728;
+}
+
+#check {
+    border-collapse: collapse;
+    padding: inherit;
+
+}
+
+tr {
+    height: 5em;
+    width: 3em;
+    font-size: large;
+}
+#optional {
+    visibility: hidden;
+}
+
+button {
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    height: 35px;
+    width: 100%;
+    border-width: 4px;
+    border-color: #0e0362;
+}
+
+input[type="checkbox"] {
+    border: 1px solid #000;
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin: 7px;
+}

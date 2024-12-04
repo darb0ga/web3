@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:p="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>главная страница</title>
+    <link href="../style/main.css" rel="stylesheet" type="text/css"/>
+    <!-- Подключение скрипта для часов -->
+
+    <h:outputScript src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</h:head>
+<h:body>
+    <h:form id="form">
+        <h:dataTable>
+        <h:outputLabel>Выберите значение х</h:outputLabel>
+        <h:column>
+            <h:commandLink value="-5" action="../"> -5</h:commandLink>
+            <h:commandLink value="-4"> -4</h:commandLink>
+            <h:commandLink value="-3"> -3</h:commandLink>
+            <h:commandLink value="-2"> -2</h:commandLink>
+            <h:commandLink value="-1"> -1</h:commandLink>
+            <h:commandLink value="0"> 0</h:commandLink>
+            <h:commandLink value="1"> 1</h:commandLink>
+            <h:commandLink value="2"> 2</h:commandLink>
+            <h:commandLink value="3"> 3</h:commandLink>
+        </h:column>
+        <h:column>
+            <h:outputLabel for="y">Введите значение y</h:outputLabel>
+            <input id="y" name="y" type="text">
+            </input>
+        </h:column>
+        <h:column>
+            <h:outputLabel> Выбрите значение r</h:outputLabel>
+            <h:selectBooleanCheckbox name="1">1</h:selectBooleanCheckbox>
+            <h:selectBooleanCheckbox name="1.5">1.5</h:selectBooleanCheckbox>
+            <h:selectBooleanCheckbox name="2">2</h:selectBooleanCheckbox>
+            <h:selectBooleanCheckbox name="2.5">2.5</h:selectBooleanCheckbox>
+            <h:selectBooleanCheckbox name="3">3</h:selectBooleanCheckbox>
+        </h:column>
+
+        </h:dataTable>
+
+    </h:form>
+</h:body>
+
+</html>
