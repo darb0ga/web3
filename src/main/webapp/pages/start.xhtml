@@ -17,11 +17,16 @@
 <h:body>
     <h1>Борисова Дарья Веб3 варик 836932</h1>
     <!-- Кнопка начать -->
-    <h:form>
-        <h:commandButton value="Начать" action="#toMain" outcome="toMain" styleClass="btn"/>
+
+    <!--ИСПРАВИТЬ СТИЛЬ-->
+    <h:form >
+        <h:button type="button" value="Начать" outcome="toMain" styleClass="btn"/>
+
+        <!-- Канва для часов -->
+        <canvas id="clock"></canvas>
     </h:form>
-    <!-- Канва для часов -->
-    <canvas id="clock" width="300" height="300"></canvas>
+
+
 </h:body>
 
 </html>

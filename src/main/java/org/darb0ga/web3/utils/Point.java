@@ -9,10 +9,11 @@ public class Point implements Serializable{
 
     private boolean isIn;
 
-    public Point(float x, float y, float r){
+    public Point(float x, float y, float r, boolean isIn){
         this.x = x;
         this.y = y;
         this.r = r;
+        this.isIn = isIn;
     }
 
     public float getX(){
@@ -34,8 +35,5 @@ public class Point implements Serializable{
         return this.isIn;
     }
 
-    public void setIn(boolean in) {
-        isIn = in;
-    }
 
 }

@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>web3</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <properties>
@@ -72,12 +72,14 @@
             <version>2.2</version>
         </dependency>
 
-        <!-- Hibernate JPA Provider -->
+        <!-- Hibernate JPA Provider
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.7.Final</version>  <!-- Укажите последнюю доступную версию -->
-        </dependency>
+            <version>
+                6.6.3
+            </version>
+        </dependency>-->
     </dependencies>
 
 </project>

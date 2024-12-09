@@ -2,13 +2,12 @@
 const canvas = document.getElementById('clock');
 const ctx = canvas.getContext('2d');
 const radius = canvas.height / 2;
+ctx.translate(radius, radius);
 
 function drawFace() {
-    ctx.translate(radius, radius);
-    ctx.clearRect(-radius, -radius, canvas.width, canvas.height);
-    ctx.fillStyle = 'black';
     ctx.beginPath();
     ctx.arc(0, 0, radius - 5, 0, Math.PI * 2);
+    ctx.fillStyle = 'black';
     ctx.fill();
     // окружность циферблата
     grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
